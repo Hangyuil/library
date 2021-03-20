@@ -1,0 +1,49 @@
+.main_bg {
+  width: 2200px;
+  height: 600px;
+  position: absolute;
+  top: 144px;
+  background-color: #a4c9c0;
+  left: 50%;
+  margin-left: -1100px;
+  vertical-align: bottom;
+  text-align: center;
+ 
+}
+
+.main_bookCollection {
+  width: 1060px;
+  height: 400px;
+  margin: 0 auto;
+  margin-top: 800px;
+ text-align: center;
+  background-color: #c7c7c7;
+}
+
+.recommendedBooks {
+  margin: 0 auto;
+  background-color: transparent;
+  text-align: center;
+
+  width: 1060px;
+  margin-bottom: 500px;
+  margin-top: 50px;
+}
+
+.main_k-LiBooks {
+  width: 48%;
+  float: left;
+
+  height: 248.5px;
+
+  background-color: #b3e6da;
+}
+
+.main_requireBooks {
+  width: 48%;
+  height: 248.5px;
+  flex-grow: 0;
+
+  background-color: #87c2b4;
+  float: right;
+}

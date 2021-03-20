@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>괴산고등학교 도서관</title>
+    <link rel="stylesheet" href="검색창.css">
+    <link rel="stylesheet" href="도서검색.css">
+    <link rel="stylesheet" href="table.css">
+</head>
+<body leftmargin="0" rightmargin="0">
+    <header id="header" role="banner" class="head">
+  
+        <a href="학교도서관_메인.html" >  <img src="괴산고등학교 도서관.PNG" alt="괴산고등학교 도서관 로고" style=" width: 104px;
+             height: 94px; margin-top: 11px; margin-left: 125px;" >  </a>
+             <a href="로그인.html" style="position:absolute; right: 10%; font-size: 14px;
+             margin-right: -50px; top: 60px; color: black; text-decoration: none;" >로그인/회원가입</a>
+            
+    
+       <form id="search">
+        <select name="WhichSearch" class="SelectSearch">
+            <option id="통합검색" value="통합검색">통합검색</option> 
+        <option id="제목검색" value="제목검색">제목검색</option>
+        <option id="작가검색" value="작가검색">작가검색</option>     
+    </select>
+      
+            <input id="keyword" type="text" placeholder="검색어를 입력하세요" name="search" maxlength="255" autocomplete="off" value="">
+            <button type="submit" class="img-button" name="click"></button>
+    
+        
+        </form>
+       
+    </header>
+    <h1 style="font-size: 36px; color: black; margin: 69px 34px 2px 125px;">도서검색</h1>
+    <a href="도서신청.html"><h2 style=" position: absolute; font-size: 18px; color: black; top:190px; right: 219px; ">도서 신청하기></h2>
+    </a>
+    <hr  size="5" width="100%" color="#7dbbac">
+    <div class="sortOfBooks"></div>
+    <table id="tableOfBooks">
+      <colgroup >
+         <!--이미지-->
+        <col width="5%">
+        <!--도서명-->
+      <col width="38%">
+      <!--저자-->
+      <col width="20%">
+       <!--발행처-->
+       <col width="10%">
+        <!--발행년-->
+      <col width="7%">
+       <!--청구기호-->
+       <col width="10%">
+        <!--편집-->
+      <col width="10%">
+      </colgroup>
+        <thead>
+          <!--이미지 및 책제목-->
+          <th ></th>
+          <th >도서명</th>
+          <th >저자</th>
+          <th >발행처</th>
+          <th>발행년</th>
+          <th >청구기호</th>
+          <th >
+            <div class="Table_length" id="boardTable_length" style="margin-left:5%;">
+            <label>
+              <select name="boardTable_length" aria-controls="tableOfBooks" class="" style="padding: 9px;">
+              <option value="10" selected="selected">10개</option>
+              <option value="50" >50개</option>
+              <option value="100">100개</option>
+              <option value="150">150개</option>
+          
+              </select>
+
+            </label>
+           </div>
+          </th>
+        </thead>
+        <tbody>
+        
+          <tr class="tb_body">
+            <!--이미지-->
+            <td></td>
+            <!--책제목-->
+            <td class="title">부의 추월차선</td>
+            <!--저자-->
+            <td class="writer">엠제이 드마코</td>
+            <!--발행처-->
+            <td class="publisher"> 모름</td>
+            <!--발행년-->
+            <td class="date">2001</td>
+            <!--청구기호-->
+            <td class="callNumber">1212</td>
+            <!--대출여부-->
+            <td class="borrowButton">
+              <button class="btn">도서대출</button>
+            </td>
+          </tr>
+          <tr class="tb_body">
+            <!--이미지-->
+            <td></td>
+            <!--책제목-->
+            <td class="title">제로 투 원</td>
+            <!--저자-->
+            <td class="writer">피터틸</td>
+            <!--발행처-->
+            <td class="publisher"> 상놈</td>
+            <!--발행년-->
+            <td class="date">2002</td>
+            <!--청구기호-->
+            <td class="callNumber">1312</td>
+            <!--대출여부-->
+            <td class="borrowButton">
+              <button class="btn">도서대출</button>
+            </td>
+          </tr>
+          <tr class="tb_body">
+            <!--이미지-->
+            <td></td>
+            <!--책제목-->
+            <td class="title">도파민형 인간</td>
+            <!--저자-->
+            <td class="writer">미정</td>
+            <!--발행처-->
+            <td class="publisher">아름</td>
+            <!--발행년-->
+            <td class="date">2201</td>
+            <!--청구기호-->
+            <td class="callNumber">11234</td>
+            <!--대출여부-->
+            <td class="borrowButton">
+              <button class="btn">도서대출</button>
+            </td>
+          </tr>
+          <tr class="tb_body">
+            <!--이미지-->
+            <td></td>
+            <!--책제목-->
+            <td class="title">도파민형 인간</td>
+            <!--저자-->
+            <td class="writer">미정</td>
+            <!--발행처-->
+            <td class="publisher">아름</td>
+            <!--발행년-->
+            <td class="date">2201</td>
+            <!--청구기호-->
+            <td class="callNumber">11234</td>
+            <!--대출여부-->
+            <td class="borrowButton">
+              <button class="btn">도서대출</button>
+            </td>
+          </tr>
+          <tr class="tb_body">
+            <!--이미지-->
+            <td></td>
+            <!--책제목-->
+            <td class="title">도파민형 인간</td>
+            <!--저자-->
+            <td class="writer">미정</td>
+            <!--발행처-->
+            <td class="publisher">아름</td>
+            <!--발행년-->
+            <td class="date">2201</td>
+            <!--청구기호-->
+            <td class="callNumber">11234</td>
+            <!--대출여부-->
+            <td class="borrowButton">
+              <button class="btn">도서대출</button>
+            </td>
+          </tr>
+          <tr class="tb_body">
+            <!--이미지-->
+            <td></td>
+            <!--책제목-->
+            <td class="title">도파민형 인간</td>
+            <!--저자-->
+            <td class="writer">미정</td>
+            <!--발행처-->
+            <td class="publisher">아름</td>
+            <!--발행년-->
+            <td class="date">2201</td>
+            <!--청구기호-->
+            <td class="callNumber">11234</td>
+            <!--대출여부-->
+            <td class="borrowButton">
+              <button class="btn">도서대출</button>
+            </td>
+          </tr>
+          <tr class="tb_body">
+            <!--이미지-->
+            <td></td>
+            <!--책제목-->
+            <td class="title">도파민형 인간</td>
+            <!--저자-->
+            <td class="writer">미정</td>
+            <!--발행처-->
+            <td class="publisher">아름</td>
+            <!--발행년-->
+            <td class="date">2201</td>
+            <!--청구기호-->
+            <td class="callNumber">11234</td>
+            <!--대출여부-->
+            <td class="borrowButton">
+              <button class="btn">도서대출</button>
+            </td>
+          </tr>
+          <tr class="tb_body">
+            <!--이미지-->
+            <td></td>
+            <!--책제목-->
+            <td class="title">도파민형 인간</td>
+            <!--저자-->
+            <td class="writer">미정</td>
+            <!--발행처-->
+            <td class="publisher">아름</td>
+            <!--발행년-->
+            <td class="date">2201</td>
+            <!--청구기호-->
+            <td class="callNumber">11234</td>
+            <!--대출여부-->
+            <td class="borrowButton">
+              <button class="btn">도서대출</button>
+            </td>
+          </tr>
+          <tr class="tb_body">
+            <!--이미지-->
+            <td></td>
+            <!--책제목-->
+            <td class="title">도파민형 인간</td>
+            <!--저자-->
+            <td class="writer">미정</td>
+            <!--발행처-->
+            <td class="publisher">아름</td>
+            <!--발행년-->
+            <td class="date">2201</td>
+            <!--청구기호-->
+            <td class="callNumber">11234</td>
+            <!--대출여부-->
+            <td class="borrowButton">
+              <button class="btn">도서대출</button>
+            </td>
+          </tr>
+          <tr class="tb_body">
+            <!--이미지-->
+            <td></td>
+            <!--책제목-->
+            <td class="title">도파민형 인간</td>
+            <!--저자-->
+            <td class="writer">미정</td>
+            <!--발행처-->
+            <td class="publisher">아름</td>
+            <!--발행년-->
+            <td class="date">2201</td>
+            <!--청구기호-->
+            <td class="callNumber">11234</td>
+            <!--대출여부-->
+            <td class="borrowButton">
+              <button class="btn">도서대출</button>
+            </td>
+          </tr>
+          <tr class="tb_body">
+            <!--이미지-->
+            <td></td>
+            <!--책제목-->
+            <td class="title">도파민형 인간</td>
+            <!--저자-->
+            <td class="writer">미정</td>
+            <!--발행처-->
+            <td class="publisher">아름</td>
+            <!--발행년-->
+            <td class="date">2201</td>
+            <!--청구기호-->
+            <td class="callNumber">11234</td>
+            <!--대출여부-->
+            <td class="borrowButton">
+              <button class="btn">도서대출</button>
+            </td>
+          </tr>
+          <tr class="tb_body">
+            <!--이미지-->
+            <td></td>
+            <!--책제목-->
+            <td class="title">도파민형 인간</td>
+            <!--저자-->
+            <td class="writer">미정</td>
+            <!--발행처-->
+            <td class="publisher">아름</td>
+            <!--발행년-->
+            <td class="date">2201</td>
+            <!--청구기호-->
+            <td class="callNumber">11234</td>
+            <!--대출여부-->
+            <td class="borrowButton">
+              <button class="btn">도서대출</button>
+            </td>
+          </tr>
+          <tr class="tb_body">
+            <!--이미지-->
+            <td></td>
+            <!--책제목-->
+            <td class="title">도파민형 인간</td>
+            <!--저자-->
+            <td class="writer">미정</td>
+            <!--발행처-->
+            <td class="publisher">아름</td>
+            <!--발행년-->
+            <td class="date">2201</td>
+            <!--청구기호-->
+            <td class="callNumber">11234</td>
+            <!--대출여부-->
+            <td class="borrowButton">
+              <button class="btn">도서대출</button>
+            </td>
+          </tr>
+          <tr class="tb_body">
+            <!--이미지-->
+            <td></td>
+            <!--책제목-->
+            <td class="title">도파민형 인간</td>
+            <!--저자-->
+            <td class="writer">미정</td>
+            <!--발행처-->
+            <td class="publisher">아름</td>
+            <!--발행년-->
+            <td class="date">2201</td>
+            <!--청구기호-->
+            <td class="callNumber">11234</td>
+            <!--대출여부-->
+            <td class="borrowButton">
+              <button class="btn">도서대출</button>
+            </td>
+          </tr>
+          <tr class="tb_body">
+            <!--이미지-->
+            <td></td>
+            <!--책제목-->
+            <td class="title">도파민형 인간</td>
+            <!--저자-->
+            <td class="writer">미정</td>
+            <!--발행처-->
+            <td class="publisher">아름</td>
+            <!--발행년-->
+            <td class="date">2201</td>
+            <!--청구기호-->
+            <td class="callNumber">11234</td>
+            <!--대출여부-->
+            <td class="borrowButton">
+              <button class="btn">도서대출</button>
+            </td>
+          </tr>
+          <tr class="tb_body">
+            <!--이미지-->
+            <td></td>
+            <!--책제목-->
+            <td class="title">도파민형 인간</td>
+            <!--저자-->
+            <td class="writer">미정</td>
+            <!--발행처-->
+            <td class="publisher">아름</td>
+            <!--발행년-->
+            <td class="date">2201</td>
+            <!--청구기호-->
+            <td class="callNumber">11234</td>
+            <!--대출여부-->
+            <td class="borrowButton">
+              <button class="btn">도서대출</button>
+            </td>
+          </tr>
+          <tr class="tb_body">
+            <!--이미지-->
+            <td></td>
+            <!--책제목-->
+            <td class="title">도파민형 인간</td>
+            <!--저자-->
+            <td class="writer">미정</td>
+            <!--발행처-->
+            <td class="publisher">아름</td>
+            <!--발행년-->
+            <td class="date">2201</td>
+            <!--청구기호-->
+            <td class="callNumber">11234</td>
+            <!--대출여부-->
+            <td class="borrowButton">
+              <button class="btn">도서대출</button>
+            </td>
+          </tr>
+          <tr class="tb_body">
+            <!--이미지-->
+            <td></td>
+            <!--책제목-->
+            <td class="title">도파민형 인간</td>
+            <!--저자-->
+            <td class="writer">미정</td>
+            <!--발행처-->
+            <td class="publisher">아름</td>
+            <!--발행년-->
+            <td class="date">2201</td>
+            <!--청구기호-->
+            <td class="callNumber">11234</td>
+            <!--대출여부-->
+            <td class="borrowButton">
+              <button class="btn">도서대출</button>
+            </td>
+          </tr>
+          <tr class="tb_body">
+            <!--이미지-->
+            <td></td>
+            <!--책제목-->
+            <td class="title">도파민형 인간</td>
+            <!--저자-->
+            <td class="writer">미정</td>
+            <!--발행처-->
+            <td class="publisher">아름</td>
+            <!--발행년-->
+            <td class="date">2201</td>
+            <!--청구기호-->
+            <td class="callNumber">11234</td>
+            <!--대출여부-->
+            <td class="borrowButton">
+              <button class="btn">도서대출</button>
+            </td>
+          </tr>
+          <tr class="tb_body">
+            <!--이미지-->
+            <td></td>
+            <!--책제목-->
+            <td class="title">도파민형 인간</td>
+            <!--저자-->
+            <td class="writer">미정</td>
+            <!--발행처-->
+            <td class="publisher">아름</td>
+            <!--발행년-->
+            <td class="date">2201</td>
+            <!--청구기호-->
+            <td class="callNumber">11234</td>
+            <!--대출여부-->
+            <td class="borrowButton">
+              <button class="btn">도서대출</button>
+            </td>
+          </tr>
+          <tr class="tb_body">
+            <!--이미지-->
+            <td></td>
+            <!--책제목-->
+            <td class="title">도파민형 인간</td>
+            <!--저자-->
+            <td class="writer">미정</td>
+            <!--발행처-->
+            <td class="publisher">아름</td>
+            <!--발행년-->
+            <td class="date">2201</td>
+            <!--청구기호-->
+            <td class="callNumber">11234</td>
+            <!--대출여부-->
+            <td class="borrowButton">
+              <button class="btn">도서대출</button>
+            </td>
+          </tr>
+          
+        </tbody>
+      </table>
+      <script>
+       $(document).ready(function() {
+            $("#keyword").keyup(function() {
+                var k = $(this).val();
+                $("#tableOfBooks > tbody > tr").hide();
+                var temp = $("#tableOfBooks > tbody > tr > td:nth-child(5n+2):contains('" + k + "')");
+
+                $(temp).parent().show();
+            })
+        })
+  </script>
+
+
+
+<script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+</body>
+</html>

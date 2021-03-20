@@ -1,0 +1,27 @@
+.requiredBooks {
+  border-collapse: collapse;
+  text-align: center;
+  line-height: 1.5;
+  margin-top: 20px;
+  margin: 0 auto;
+}
+
+table.requiredBooks thead th {
+  padding: 10px;
+  font-weight: bold;
+  vertical-align: top;
+  color: #477468;
+  border-bottom: 3px solid #63998c;
+  font-size: 14px;
+}
+
+table.requiredBooks tbody td {
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 5px;
+  vertical-align: top;
+}
+
+#lastTd {
+  border-right: none;
+}

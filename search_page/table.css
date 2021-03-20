@@ -1,0 +1,26 @@
+#tableOfBooks {
+  border-collapse: collapse;
+  text-align: center;
+  line-height: 1.5;
+ 
+  margin: 0 auto;
+  margin-top: 20px; 
+}
+
+table#tableOfBooks thead th {
+  padding: 5px;
+  font-weight: bold;
+  vertical-align: middle;
+  color: #477468;
+  border-bottom: 3px solid #63998c;
+  font-size: 14px;
+}
+
+table#tableOfBooks tbody td {
+ 
+  border-bottom: 1px solid #ccc;
+  padding: 5px;
+  vertical-align: middle;
+}
+
+

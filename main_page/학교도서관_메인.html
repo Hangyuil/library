@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>괴산고등학교 도서관</title>
+<link rel="stylesheet" href="/검색창.css">
+<link rel="stylesheet" href="mainPageBackground.css">
+</head>
+
+<body leftmargin="0" rightmargin="0">
+    <header id="header" role="banner" class="head">
+  <div style="height: 100px; width: 1400px; margin: 0 auto; text-align: center; margin-top: 20px; vertical-align: middle;">
+    <a href="학교도서관_메인.html" id="refresh">  <img src="/괴산고등학교 도서관.PNG " alt="괴산고등학교 도서관 로고" style=" width: 7.5%; top: 40px;
+         height: 94px; float: left; margin-right: 300px; " >  </a>
+    
+    <a href="https://school.cbe.go.kr/_sso/member/login?t=eb739406658b3d40f532832bf07e6d52e02d902a143bf53b39c99329f4c12009ccc0d7084582fedabfa3eef9cfc13b65ad21011cd23c5b5b637878f9d15420628659296790c28ea7e61173891d55bd8f0aaf3fe820bcecfc028d233653629f700c3ee84bc8b556a6f44aedb7054bbf5fba75b93dc2176d0c24c69fd336c3d8e26a3ffb937d33432013c833b9c01fa7c578bb9c408590b1e2c3456d1e139fe3e2441c35addc06b04c1982bfdee54d81cf47350ef86180503559b383f19add926b2824e015fef3e08b85365abc71146e8f6c81575e398ec3802dbcc44aa0d27f31f693448cf4468d3097ffc682532660fa25d629fe0be5018be7f1db7a32858412aa3b70be653ad85246c417931fbdcbda2fec0b77e41027fea1fd26b3e26869099f5f2da5be3a043097b7d82747274e68557b476a940cb6de036a2528ea7ca14debc409325115944ee3cd55187bd0a751"
+     style="float: right; font-size: 14px;
+      margin-top: 40px; color: black; text-decoration: none;" >로그인/회원가입</a>
+    
+
+    <form id="search">
+      <select name="WhichSearch" class="SelectSearch">
+          <option id="통합검색" value="통합검색">통합검색</option> 
+      <option id="제목검색" value="제목검색">제목검색</option>
+      <option id="작가검색" value="작가검색">작가검색</option>     
+  </select>
+    
+          <input id="keyword" type="text" placeholder="검색어를 입력하세요" name="search" maxlength="255" autocomplete="off" value="">
+          <button type="submit" class="img-button" name="click"></button>
+  
+      
+      </form>
+  </div>
+</header>
+<div class="main_bg">대출 베스트 <!--새로 들어온 책--></div>
+<div class="main_bookCollection">
+ <pre> <a href="">전체</a href="">ㅣ<a href="">총류</a href="">ㅣ<a href="">철학</a href="">ㅣ<a href="">종교</a href="">ㅣ<a href="">사회과학</a href="">ㅣ<a href="">자연과학</a href="">ㅣ<a href="">기술과학</a href="">ㅣ<a href="">예술</a href="">ㅣ<a href="">언어</a href="">ㅣ<a href="">문학</a href="">ㅣ<a href="">역사</a href=""> </pre>
+</div>
+<div class="recommendedBooks">
+<div class="main_k-LiBooks"></div>
+<a href="/req_page/도서신청.html"><div class="main_requireBooks" ></div></a>
+</div>
+</div>
+<script>
+    
+   /* window.onresize = function(event) 
+{
+    // test if one element overlaps another
+    if($('#refresh').overlaps('.search'))
+    {
+        //Do stuff, like hide one of the overlapping divs
+        $('#refresh').hide();
+    }
+}*/
+</script>
+<script src="검색.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+</body>
+</html>

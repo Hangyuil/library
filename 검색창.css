@@ -1,0 +1,48 @@
+#search {
+  height: 40px;
+  width: 738px;
+  border: 1px solid rgb(214, 214, 214);
+  background: white;
+  position: absolute;
+  padding: 0px;
+  left: 50%;
+  top: 49px;
+  margin-left: -369px;
+}
+select {
+  border: none;
+  outline: none;
+  width: 100px;
+  font-size: 14px;
+  font-weight: 300;
+  flex-grow: 1;
+  padding-left: 10px;
+}
+
+#keyword {
+  border: none;
+  width: 548px;
+  height: 100%;
+  flex-grow: 7;
+
+  font-size: 16px;
+  padding: 0px;
+  margin: 0px;
+  margin-left: 5px;
+  color: #a5a3a3;
+  outline: none;
+}
+
+button.img-button {
+  background-color: transparent;
+  width: 70.1px;
+  height: 100%;
+
+  flex-grow: 1;
+  border: none;
+  float: right;
+  background-image: url("검색.PNG");
+  background-size: 25px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
